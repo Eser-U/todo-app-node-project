@@ -2,7 +2,7 @@ pipeline {
     agent { label "master" }
     environment {
         ECR_REGISTRY = "public.ecr.aws/s5d9z0m9"
-        APP_REPO_NAME= "clarusway-repo/to-do-app"
+        APP_REPO_NAME= "clarusway/to-do-app"
         PATH="/usr/local/bin/:${env.PATH}"
     }
     stages {
