@@ -1,7 +1,7 @@
 pipeline {
     agent { label "master" }
     environment {
-        ECR_REGISTRY = "<aws_account_id>.dkr.ecr.us-east-1.amazonaws.com"
+        ECR_REGISTRY = "public.ecr.aws/s5d9z0m9"
         APP_REPO_NAME= "clarusway-repo/todo-app"
     }
     stages {
