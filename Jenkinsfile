@@ -38,7 +38,7 @@ pipeline {
                 sh 'docker run --name todo -dp 80:3000 "$ECR_REGISTRY/$APP_REPO_NAME:latest"'
             }
         }
-    
+    }
     post {
         always {
             echo 'Deleting all local images'
@@ -46,4 +46,4 @@ pipeline {
         }
     }
 }
-}
+
